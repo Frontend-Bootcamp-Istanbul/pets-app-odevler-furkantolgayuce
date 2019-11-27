@@ -2,14 +2,15 @@ import React from 'react';
 
 
 function Pet(props) {
-    const {name, image, age, description, breed} = props;
+    const {name, image, age, description, breed,id} = props;
+    const link = "/detay/" + id;
     return (
         <div className="col-lg-6 col-md-4 mb-4">
             <div className="card h-100">
-                <a href="#"><img className="card-img-top" src={image} alt="" style={{height: "292px"}}/></a>
+                <a href={link}><img className="card-img-top" src={image} alt="" style={{height: "292px"}}/></a>
                 <div className="card-body">
                     <h4 className="card-title">
-                        <a href="#">{name}</a>
+                        <a href={link}>{name}</a>
                         <div>
                             <span className="badge badge-primary" style={{fontSize: "12px"}}>{breed}</span>
                         </div>
