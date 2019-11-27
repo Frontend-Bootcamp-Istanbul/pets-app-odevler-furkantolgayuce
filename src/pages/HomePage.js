@@ -34,7 +34,7 @@ class HomePage extends React.Component{
     render(){
         return (
             <div>
-                <div className="container">
+                <div className="container my-5">
                     <div className="row">
                         <div className="col-lg-3">
                             <Sidebar

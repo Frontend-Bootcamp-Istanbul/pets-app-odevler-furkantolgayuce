@@ -54,7 +54,9 @@ class PetList extends React.Component{
 
 
     render(){
-        const Yukleniyor = <div>Yukleniyor</div>;
+        const Yukleniyor = <div className="spinner-border m-5" role="status">
+            <span className="sr-only">Loading...</span>
+        </div>;
         const EmptyPets = <div>Bulunamadı</div>;
         const Pets =  [<h3>Gösterilen Pet Sayısı: {this.state.pets.length}</h3>,<div className="row">
             {

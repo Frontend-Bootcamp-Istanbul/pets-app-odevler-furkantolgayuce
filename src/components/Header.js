@@ -6,11 +6,11 @@ function Header() {
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container">
-                    <a className="navbar-brand" href="#">Pets</a>
+                    <a className="navbar-brand" href="/">Pets</a>
                     <div className="collapse navbar-collapse" id="navbarResponsive">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
-                                <Link className="nav-link" to="/">HomePage</Link>
+                                <Link className="nav-link" to="/">Anasayfa</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/favoriler">Favoriler</Link>
